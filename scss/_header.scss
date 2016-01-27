@@ -1,0 +1,57 @@
+header{
+	width: 100%; 
+	height:70px;
+	background-color: $darkBlueAlfa;
+	font-family: $openSans;
+	color: white;
+	font-weight: 300;
+	position:fixed;
+	left:0;
+	top:0;
+	
+	div {
+		&.logo{
+			float: left;
+		
+			
+			p{
+				line-height: 70px;
+				font-weight: 300;
+				font-size: $text;
+				span{
+					font-style: italic;
+				&:after{
+					content: '|';
+					margin-left: 15px;
+					margin-right: 15px;
+					font-style: normal;
+					}
+					}
+				}
+			}
+			
+	}
+
+	nav{
+		overflow: hidden;
+		ul{
+			float: right;
+			li{
+				display: inline-block;
+				font-size: $text;
+				padding-right: 15px;
+
+				a{
+					height: 70px;
+					line-height: 70px;
+					display: block;
+				&.active{
+					border-top: 2px $lightGray solid;
+
+					}
+				}
+
+			}
+		}
+	}
+}
